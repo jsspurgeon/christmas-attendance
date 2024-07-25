@@ -1,7 +1,31 @@
 data_source:
   attendance:
-    type: csv
-    storage: google_drive
-    url: https://drive.google.com/file/d/1h-gBRLHkv9wVdKQfnJp-S4WxumxZ970Q/view
+    columns:
+      Activity Type Description: str
+      Activity Type ID: int64
+      Create Date Time: str
+      Data Entry Method: str
+      Data Entry Method ID: float64
+      Data Entry Person: str
+      Entry Note: str
+      Entry Type Description: str
+      Entry Value: int64
+      EntryType ID: int64
+      Metric Name: str
+      Ministry Description: str
+      Ministry ID: int64
+      New Attendance Tracker ID: int64
+      Service Date: str
+      Service Date ID: int64
+      Service Date Time: str
+      Service Description: str
+      Service ID: int64
+      Service Instance ID: float64
+      Service Time: str
+      Site Description: str
+      Site Master ID: float64
     description: Attendance data
-    file_name: vwRockAttendanceTracker.csv 
+    file_name: vwRockAttendanceTracker.csv
+    storage: google_drive
+    type: csv
+    url: https://drive.google.com/file/d/1h-gBRLHkv9wVdKQfnJp-S4WxumxZ970Q/view?usp=drive_link
